@@ -28,7 +28,7 @@
      required="True"/>
 
     <column name="BLAZAR_NAME" type="text"
-      ucd="meta.id;meta.main"
+      ucd="meta.id.cross;meta.main"
       tablehead="Blazar_Name" verbLevel="1"
       description="Designation"
       required="True"/>
