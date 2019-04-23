@@ -27,19 +27,31 @@
      description="ID number"
      required="True"/>
 
+   <column name="NAME" type="text"
+     ucd="meta.id.cross;meta.main"
+     tablehead="Blazar_Name" verbLevel="1"
+     description="Designation"
+     required="True"/>
+
     <column name="BLAZAR_NAME" type="text"
       ucd="meta.id.cross;meta.main"
       tablehead="Blazar_Name" verbLevel="1"
       description="Designation"
       required="True"/>
 
-    <column name="RA" type="real"
+    <column name="OTHER_NAME" type="text"
+      ucd="meta.id.cross;meta.main"
+      tablehead="Blazar_Name" verbLevel="1"
+      description="Designation"
+      required="True"/>
+
+    <column name="RAJ2000" type="real"
       unit="deg" ucd="pos.eq.ra;meta.main"
       tablehead="RA" verbLevel="1"
       description="Right Ascension"
       required="True"/>
 
-    <column name="DEC" type="real"
+    <column name="DECJ2000" type="real"
       unit="deg" ucd="pos.eq.dec;meta.main"
       tablehead="Dec" verbLevel="1"
       description="Declination"
@@ -255,17 +267,23 @@
      description="FLUX error at 4.5 KeV"
      required="True"/>
 
-   <column name="FITTED_SLOPE" type="real"
+   <column name="PL_SLOPE" type="real"
      ucd="spect.index;em.X-ray"
      tablehead="FITTED_SLOPE" verbLevel="1"
      description="Fitted X-ray spectral slope"
      required="True"/>
 
-   <column name="FITTED_SLOPE_ERROR" type="real"
+   <column name="PL_SLOPE_ERROR" type="real"
      ucd="stat.error;spect.index;em.X-ray"
      tablehead="FITTED_SLOPE_ERROR" verbLevel="1"
-     description="FFitted X-ray spectral slope error"
+     description="Fitted X-ray spectral slope error"
      required="True"/>
+
+   <column name="PILEDUP" type="real"
+      ucd="stat.error;spect.index;em.X-ray"
+      tablehead="PILEDUP" verbLevel="1"
+      description="Ctr larger than 0.6 or not"
+      required="True"/>
 
   </table>
 
