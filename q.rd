@@ -45,13 +45,13 @@
       description="Designation"
       required="True"/>
 
-    <column name="RAJ2000" type="real"
+    <column name="RA" type="real"
       unit="deg" ucd="pos.eq.ra;meta.main"
       tablehead="RA" verbLevel="1"
       description="Right Ascension"
       required="True"/>
 
-    <column name="DECJ2000" type="real"
+    <column name="DEC" type="real"
       unit="deg" ucd="pos.eq.dec;meta.main"
       tablehead="Dec" verbLevel="1"
       description="Declination"
@@ -117,7 +117,7 @@
       description="Count rate error between 1 keV - 2 KeV"
       required="True"/>
 
-   <column name="UPPER_LIMIT_1" type="real"
+   <column name="UPPER_LIMIT_1_2" type="real"
       unit="ct/s" ucd="phot.count;em.X-ray;stat.max"
       tablehead="UPPER_LIMIT_0" verbLevel="1"
       description="Uppler limit between 1 keV - 2 KeV"
@@ -135,7 +135,7 @@
       description="Count rate error between 2 keV - 10 KeV"
       required="True"/>
 
-   <column name="UPPER_LIMIT_2" type="real"
+   <column name="UPPER_LIMIT_2_10" type="real"
       unit="ct/s" ucd="phot.count;em.X-ray;stat.max"
       tablehead="UPPER_LIMIT_2" verbLevel="1"
       description="Uppler limit between 2 keV - 10 KeV"
@@ -279,7 +279,7 @@
      description="Fitted X-ray spectral slope error"
      required="True"/>
 
-   <column name="PILEDUP" type="real"
+   <column name="PILEDUP" type="text"
       ucd="stat.error;spect.index;em.X-ray"
       tablehead="PILEDUP" verbLevel="1"
       description="Ctr larger than 0.6 or not"
