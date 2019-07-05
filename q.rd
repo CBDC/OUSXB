@@ -27,19 +27,7 @@
      description="ID number"
      required="True"/>
 
-   <column name="NAME" type="text"
-     ucd="meta.id.cross;meta.main"
-     tablehead="Blazar_Name" verbLevel="1"
-     description="Designation"
-     required="True"/>
-
     <column name="BLAZAR_NAME" type="text"
-      ucd="meta.id.cross;meta.main"
-      tablehead="Blazar_Name" verbLevel="1"
-      description="Designation"
-      required="True"/>
-
-    <column name="OTHER_NAME" type="text"
       ucd="meta.id.cross;meta.main"
       tablehead="Blazar_Name" verbLevel="1"
       description="Designation"
@@ -86,126 +74,6 @@
       tablehead="EXPOSURE_TIME" verbLevel="1"
       description="Exposure time"
       required="True"/>
-
-   <column name="CTR_03_1" type="real"
-      unit="ct/s" ucd="phot.count;em.X-ray"
-      tablehead="CTR_03_1" verbLevel="1"
-      description="Count rate between 0.3 keV - 1 KeV"
-      required="True"/>
-
-   <column name="CTR_03_1_ERROR" type="real"
-      unit="ct/s" ucd="stat.error;phot.count;em.X-ray"
-      tablehead="CTR_03_1_ERROR" verbLevel="1"
-      description="Count rate error between 0.3 keV - 1 KeV"
-      required="True"/>
-
-   <column name="UPPER_LIMIT_0" type="real"
-      unit="ct/s" ucd="phot.count;em.X-ray;stat.max"
-      tablehead="UPPER_LIMIT_0" verbLevel="1"
-      description="Uppler limit between 0.3 keV - 1 KeV"
-      required="True"/>
-
-   <column name="CTR_1_2" type="real"
-      unit="ct/s" ucd="phot.count;em.X-ray"
-      tablehead="CTR_1_2" verbLevel="1"
-      description="Count rate between 1 keV - 2 KeV"
-      required="True"/>
-
-   <column name="CTR_1_2_ERROR" type="real"
-      unit="ct/s" ucd="stat.error;phot.count;em.X-ray"
-      tablehead="CTR_1_2_ERROR" verbLevel="1"
-      description="Count rate error between 1 keV - 2 KeV"
-      required="True"/>
-
-   <column name="UPPER_LIMIT_1_2" type="real"
-      unit="ct/s" ucd="phot.count;em.X-ray;stat.max"
-      tablehead="UPPER_LIMIT_0" verbLevel="1"
-      description="Uppler limit between 1 keV - 2 KeV"
-      required="True"/>
-
-   <column name="CTR_2_10" type="real"
-      unit="ct/s" ucd="phot.count;em.X-ray"
-      tablehead="CTR_2_10" verbLevel="1"
-      description="Count rate between 2 keV - 10 KeV"
-      required="True"/>
-
-   <column name="CTR_2_10_ERROR" type="real"
-      unit="ct/s" ucd="stat.error;phot.count;em.X-ray"
-      tablehead="CTR_03_1_ERROR" verbLevel="1"
-      description="Count rate error between 2 keV - 10 KeV"
-      required="True"/>
-
-   <column name="UPPER_LIMIT_2_10" type="real"
-      unit="ct/s" ucd="phot.count;em.X-ray;stat.max"
-      tablehead="UPPER_LIMIT_2" verbLevel="1"
-      description="Uppler limit between 2 keV - 10 KeV"
-      required="True"/>
-
-   <column name="FLUX_03_10" type="real"
-     unit="erg.s-1.cm-2" ucd="phot.flux.density;em.X-ray"
-     tablehead="FLUX_03_10" verbLevel="1"
-     description="FLUX between 0.3 keV - 10 KeV"
-     required="True"/>
-
-   <column name="FLUX_03_10_ERROR" type="real"
-     unit="erg.s-1.cm-2" ucd="stat.error;phot.flux.density;em.X-ray"
-     tablehead="FLUX_03_10_ERROR" verbLevel="1"
-     description="FLUX error between 0.3 keV - 10 KeV"
-     required="True"/>
-
-   <column name="FLUX_03_1" type="real"
-     unit="erg.s-1.cm-2" ucd="phot.flux.density;em.X-ray"
-     tablehead="FLUX_03_1" verbLevel="1"
-     description="FLUX between 0.3 keV - 1 KeV"
-     required="True"/>
-
-   <column name="FLUX_03_1_ERROR" type="real"
-     unit="erg.s-1.cm-2" ucd="stat.error;phot.flux.density;em.X-ray"
-     tablehead="FLUX_03_1_ERROR" verbLevel="1"
-     description="FLUX error between 0.3 keV - 1 KeV"
-     required="True"/>
-
-   <column name="FLUX_03_1_UL" type="real"
-     unit="erg.s-1.cm-2" ucd="phot.flux.density;em.X-ray;stat.max"
-     tablehead="FLUX_03_1_UL" verbLevel="1"
-     description="Uppler limit between 0.3 keV - 1 KeV"
-     required="True"/>
-
-   <column name="FLUX_1_2" type="real"
-     unit="erg.s-1.cm-2" ucd="phot.flux.density;em.X-ray"
-     tablehead="FLUX_1_2" verbLevel="1"
-     description="FLUX between 1 keV - 2 KeV"
-     required="True"/>
-
-   <column name="FLUX_1_2_ERROR" type="real"
-     unit="erg.s-1.cm-2" ucd="stat.error;phot.flux.density;em.X-ray"
-     tablehead="FLUX_1_2_ERROR" verbLevel="1"
-     description="FLUX error between 1 keV - 2 KeV"
-     required="True"/>
-
-   <column name="FLUX_1_2_UL" type="real"
-     unit="erg.s-1.cm-2" ucd="phot.flux.density;em.X-ray;stat.max"
-     tablehead="FLUX_1_2_UL" verbLevel="1"
-     description="Uppler limit between 1 keV - 1 KeV"
-     required="True"/>
-
-   <column name="FLUX_2_10" type="real"
-     unit="erg.s-1.cm-2" ucd="phot.flux.density;em.X-ray"
-     tablehead="FLUX_2_10" verbLevel="1"
-     description="FLUX between 2 keV - 10 KeV"
-     required="True"/>
-
-   <column name="FLUX_2_10_ERROR" type="real"
-     unit="erg.s-1.cm-2" ucd="stat.error;phot.flux.density;em.X-ray"
-     tablehead="FLUX_2_10_ERROR" verbLevel="1"
-     description="FLUX error between 2 keV - 10 KeV"
-     required="True"/>
-
-   <column name="FLUX_2_10_UL" type="real"
-     unit="erg.s-1.cm-2" ucd="phot.flux.density;em.X-ray;stat.max"
-     tablehead="FLUX_2_10_UL" verbLevel="1"
-     description="Uppler limit between 2 keV - 10 KeV"
-     required="True"/>
 
    <column name="NUFNU05KEV" type="real"
      unit="erg.s-1.cm-2" ucd="phot.flux.density;em.X-ray"
@@ -267,28 +135,10 @@
      description="FLUX error at 4.5 KeV"
      required="True"/>
 
-   <column name="PL_SLOPE" type="real"
-     ucd="spect.index;em.X-ray"
-     tablehead="FITTED_SLOPE" verbLevel="1"
-     description="Fitted X-ray spectral slope"
-     required="True"/>
-
-   <column name="PL_SLOPE_ERROR" type="real"
-     ucd="stat.error;spect.index;em.X-ray"
-     tablehead="FITTED_SLOPE_ERROR" verbLevel="1"
-     description="Fitted X-ray spectral slope error"
-     required="True"/>
-
-   <column name="PILEDUP" type="text"
-      ucd="stat.error;spect.index;em.X-ray"
-      tablehead="PILEDUP" verbLevel="1"
-      description="Ctr larger than 0.6 or not"
-      required="True"/>
-
   </table>
 
   <data id="import">
-    <sources>ousxb.fits</sources>
+    <sources>ousxb2.fits</sources>
 
     <fitsTableGrammar/>
 
