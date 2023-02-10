@@ -27,9 +27,9 @@
      description="ID number"
      required="True"/>
 
-    <column name="BLAZAR_NAME" type="text"
+    <column name="NAME" type="text"
       ucd="meta.id.cross;meta.main"
-      tablehead="Blazar_Name" verbLevel="1"
+      tablehead="Name" verbLevel="1"
       description="Designation"
       required="True"/>
 
@@ -138,7 +138,7 @@
   </table>
 
   <data id="import">
-    <sources>ousxb3.fits</sources>
+    <sources>ousxb4.fits</sources>
 
     <fitsTableGrammar/>
 
